@@ -1,3 +1,6 @@
+/* Arquivo _variables.scss */
+/* Arquivo _mixins.scss */
+/* Arquivo _placeholders.scss */
 /* Custom Stylesheet */
 /**
  * Use this file to override Materialize files so you can update
@@ -5,10 +8,34 @@
  *
  * Made By MaterializeCSS.com
  */
-
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,500i,700,700i,900,900i&display=swap");
 .icon-block {
   padding: 0 15px;
 }
+
 .icon-block .material-icons {
-	font-size: inherit;
+  font-size: inherit;
 }
+
+/* Arquivo _reset.scss */
+/* Arquivo _fonts.scss */
+/* Arquivo _base.scss */
+/* Arquivo _leilao_box.scss */
+/* Arquivo _header.scss */
+header #index-banner {
+  background-image: url(../images/banner/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Arquivo _menu.scss */
+/* Arquivo _footer.scss */
+/* Arquivo _desktop.scss */
+/* Arquivo _tablet.scss */
+/* Arquivo _mobile.scss */
+/* Arquivo _home.scss */
+/* Arquivo _entrar.scss */
+/* Arquivo _lote.scss */
+/* Arquivo _pessoa_fisica.scss */
+/* Arquivo _pessoa_juridica.scss */
