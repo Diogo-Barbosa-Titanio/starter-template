@@ -3,20 +3,32 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-    <title>Starter Template - Materialize</title>
+    <title>Lancey Leilões</title>
 
     <!-- CSS  -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="fonts/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/materialize_custom.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+    <link rel="icon" href="images/favicon.png">
 </head>
 <body>
 <nav class="purple darken-3" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="./images/logo.png"
-                                                                                               alt="Lancey Leilões"></a>
+    <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">
+            <div class="valign-wrapper">
+                <img class="responsive-img" src="./images/logo.png" alt="Lancey Leilões">
+            </div>
+        </a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="#">Faça seu login</a></li>
+            <li>
+                <a href="#">
+                    <div class="valign-wrapper">
+                        <i class="material-icons">account_circle</i><span class="texto">Faça seu login</span>
+                    </div>
+                </a>
+            </li>
             <li><a href="#">Cadastre-se</a></li>
             <li><a href="#">Quem Somos</a></li>
             <li><a href="#">Faq</a></li>
@@ -24,7 +36,10 @@
         </ul>
 
         <ul id="nav-mobile" class="sidenav">
-            <li><a href="#">Faça seu login</a></li>
+            <li><a href="#">
+                <div class="valign-wrapper"><i class="material-icons">account_circle</i><span class="texto">Faça seu login</span>
+                </div>
+            </a></li>
             <li><a href="#">Cadastre-se</a></li>
             <li><a href="#">Quem Somos</a></li>
             <li><a href="#">Faq</a></li>
@@ -59,20 +74,129 @@
 
         <div class="section">
             <div class="row">
-               <div class="col s12">
-                   <h5>Leilões em andamento</h5>
-               </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="row">
                 <div class="col s12">
-                    <h5>Leilões finalizados</h5>
+                    <h4>Leilões em andamento</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 xl4">
+                    <div class="card leilao">
+                        <div class="card-image">
+                            <div class="leilao_foto">
+                                <img class="responsive-img" src="images/leiloes/apresentacao.jpg">
+                            </div>
+                            <a class="activator btn-floating halfway-fab waves-effect waves-light"><i
+                                    class="material-icons">add</i></a>
+                        </div>
+
+                        <div class="card-content">
+
+                            <span class="card-title">
+                                <h5 class="leilao_titulo">Maui Unique Life Residences</h5>
+                            </span>
+
+                            <div class="leilao_imovel">
+                                <div class="detalhes">
+                                    <div class="quantidade">
+                                        <i class="fas fa-bath" title="Banheiros"></i>
+                                        <span class="valor">1</span>
+                                    </div>
+                                    <div class="quantidade">
+                                        <i class="fas fa-bed" title="Quartos"></i>
+                                        <span class="valor">2</span>
+                                    </div>
+                                    <div class="quantidade">
+                                        <i class="fas fa-chess-queen" title="Suítes"></i>
+                                        <span class="valor">1</span>
+                                    </div>
+                                    <div class="quantidade">
+                                        <i class="fas fa-car" title="Vagas"></i>
+                                        <span class="valor">1</span>
+                                    </div>
+                                    <div class="quantidade">
+                                        <i class="fas fa-vector-square" title="Área"></i>
+                                        <span class="valor">143 m²</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="leilao_lance">
+                                <h5 class="inicial"><span class="texto">Lance inicial:</span> <span class="valor">R$ 539.600</span>
+                                </h5>
+                                <h6 class="atual">Lance atual: <span class="valor">R$ 539.600</span></h6>
+                            </div>
+                            <div class="leilao_informacoes">
+                                <p><i class="fas fa-flag"></i><span class="campo">Código:</span><span class="valor">112</span></p>
+                                <p><i class="fas fa-map-marker-alt"></i><span class="campo">Localidade:</span><span class="valor">Rio de Janeiro, RJ</span></p>
+                                <p><i class="fas fa-calendar-alt"></i><span class="campo">Início:</span><span class="valor">27/12/2019</span></p>
+                                <p><i class="fas fa-calendar-alt"></i><span class="campo">Fim:</span><span class="valor">01/01/2020</span></p>
+                            </div>
+
+                        </div>
+
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Maui Unique Life Residences<i
+                                    class="material-icons right">close</i></span>
+
+                            <p>Aqui, o importante é você. Seu corpo é a máquina mais perfeita.
+                                Só faltava um lugar à altura para recarregar as energias.</p>
+
+                            <p>
+                                O Pontal Oceânico é um novo bairro inteiramente planejado para você viver bem com lazer,
+                                segurança e conveniência. A 5 minutos das praias do Recreio e a apenas 12 minutos da
+                                Barra, o Pontal está recebendo mais de R$120 milhões em investimentos para sua
+                                infraestrutura. Além disso, o novo bairro conta com a assinatura do renomado escritório
+                                Sérgio Santana no projeto de paisagismo.
+                            </p>
+
+                            <p>
+                                A região é presenteada com tudo que a natureza tem de mais exuberante: muito verde e
+                                montanhas pertinho do mar. O acesso é feito através de vias expressas importantes,
+                                facilitando a mobilidade e trazendo ainda mais qualidade de vida para quem mora lá.
+                            </p>
+                        </div>
+
+                        <div class="card-action">
+                            <a class="waves-effect waves-light btn">Visualizar</a>
+                        </div>
+
+                        <div class="card-tabs">
+                            <ul class="tabs tabs-fixed-width">
+                                <li class="tab"><a href="#test4">Observações</a></li>
+                                <li class="tab"><a class="active" href="#test5">Edital</a></li>
+                                <li class="tab"><a href="#test6">Detalhes</a></li>
+                            </ul>
+                        </div>
+                        <div class="card-content grey lighten-4">
+                            <div id="test4">O leilão pode ser cancelado sem aviso prévio. Leia o edital para maiores detalhes.</div>
+                            <div id="test5"><a href="#">Baixar o Edital (Formato em PDF)</a></div>
+                            <div id="test6"><p>
+                                O Pontal Oceânico é um novo bairro inteiramente planejado para você viver bem com lazer,
+                                segurança e conveniência. A 5 minutos das praias do Recreio e a apenas 12 minutos da
+                                Barra, o Pontal está recebendo mais de R$120 milhões em investimentos para sua
+                                infraestrutura. Além disso, o novo bairro conta com a assinatura do renomado escritório
+                                Sérgio Santana no projeto de paisagismo.
+                            </p>
+
+                                <p>
+                                    A região é presenteada com tudo que a natureza tem de mais exuberante: muito verde e
+                                    montanhas pertinho do mar. O acesso é feito através de vias expressas importantes,
+                                    facilitando a mobilidade e trazendo ainda mais qualidade de vida para quem mora lá.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section">
+                <div class="row">
+                    <div class="col s12">
+                        <h5>Leilões finalizados</h5>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
 </main>
 

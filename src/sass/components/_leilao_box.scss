@@ -1,1 +1,77 @@
 /* Arquivo _leilao_box.scss */
+
+.leilao {
+  &_foto {
+
+    img {
+
+    }
+
+  }
+
+  &_imovel{
+    text-align: center;
+
+    .detalhes {
+
+      .quantidade {
+
+        display: inline-block;
+        padding: 5%;
+
+        i {
+
+          font-size: 1.5rem;
+        }
+
+        .valor {
+          display: block;
+        }
+
+      }
+
+    }
+
+  }
+
+  &_titulo {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &_lance {
+    .inicial {
+      font-weight: bold;
+    }
+
+    .atual {
+      font-weight: bold;
+    }
+
+    .texto {
+      display: inline-block;
+    }
+
+    .valor {
+      display: inline-block;
+      color: $primary-color;
+    }
+
+  }
+
+  &_informacoes {
+    i {
+      color: $secondary-color;
+      padding:0 8px 0 0;
+      width: 20px;
+    }
+
+    .campo {
+      font-weight: bold;
+    }
+
+    .valor {
+      padding: 0 0 0 5px;
+    }
+  }
+}

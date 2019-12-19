@@ -1,1 +1,18 @@
 /* Arquivo _menu.scss */
+
+nav {
+
+  a {
+     //Ajustes de para o logo
+     &#logo-container {
+       height: 100%;
+
+       div {
+         height: 100%;
+       }
+
+     }
+
+  }
+
+}
