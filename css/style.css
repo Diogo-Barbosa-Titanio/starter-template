@@ -2188,6 +2188,21 @@
 }
 
 /* Arquivo _base.scss */
+/* Arquivo _login_user.scss */
+.login {
+  padding: 50px 0;
+}
+
+.login_image {
+  text-align: center;
+}
+
+.login_image img {
+  width: auto !important;
+  margin: 0 auto;
+  padding: 30px 0 0 0;
+}
+
 /* Arquivo _leilao_box.scss */
 .leilao_imovel {
   text-align: center;
@@ -2248,6 +2263,11 @@ header #index-banner {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+header .pesquisa form .titulo {
+  font-weight: bold;
+  color: #fff;
 }
 
 /* Arquivo _menu.scss */

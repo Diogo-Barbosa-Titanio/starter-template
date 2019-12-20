@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
@@ -23,7 +23,7 @@
         </a>
         <ul class="right hide-on-med-and-down">
             <li>
-                <a href="#">
+                <a href="login.html">
                     <div class="valign-wrapper">
                         <i class="material-icons">account_circle</i><span class="texto">Faça seu login</span>
                     </div>
@@ -49,22 +49,72 @@
     </div>
 </nav>
 
-<header>
+<header class="purple darken-3">
     <div class="section no-pad-bot" id="index-banner">
         <div class="container">
             <br><br>
-            <h1 class="header center orange-text">Starter Template</h1>
+            <h1 class="header center orange-text">Em breve a Lancey</h1>
             <div class="row center">
-                <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+                <h5 class="header col s12 light white-text">A plataforma que irá democratizar o leilão de imóveis.</h5>
             </div>
             <div class="row center">
                 <a href="http://materializecss.com/getting-started.html" id="download-button"
-                   class="btn-large waves-effect waves-light orange">Get Started</a>
+                   class="btn-large waves-effect waves-light orange">Conheça nossa plataforma</a>
             </div>
             <br><br>
 
         </div>
     </div>
+
+    <div class="container">
+        <div class="section pesquisa">
+            <form method="get" action="" class="row">
+                <div class="col s12 xl3">
+                    <label for="tipo_leilao" class="titulo">SELECIONE SEU INTERESSE</label>
+                    <div class="input-field">
+                        <select name="tipo_leilao" id="tipo_leilao" multiple>
+                            <option value="" disabled>Tipo do Leilão</option>
+                            <option value="1">Judicial</option>
+                            <option value="2">Extrajudicial</option>
+                            <option value="3">Privado</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="col s12 xl3">
+                    <label for="tipo_imovel" class="titulo">QUAL TIPO DE IMÓVEL?</label>
+                    <div class="input-field">
+                        <select name="tipo_imovel" id="tipo_imovel" multiple>
+                            <option value="" disabled class="red">Tipo do imóvel</option>
+                            <option value="1">Apartamento</option>
+                            <option value="2">Casa</option>
+                            <option value="3">Loja</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="col s12 xl5">
+                    <label for="localidade" class="titulo">ONDE ?</label>
+                    <div class="input-field">
+                        <i class="material-icons prefix">textsms</i>
+                        <input type="text" name="localidade" id="localidade" placeholder="Digite um bairro ou cidade" class="autocomplete">
+                    </div>
+                </div>
+
+                <div class="col s12 xl1">
+                    <br>
+                    <div class="input-field center">
+                        <button class="btn waves-effect waves-light" type="submit">Buscar</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <!-- Fim de .container -->
+
 </header>
 
 
@@ -78,6 +128,7 @@
                     <h4>Leilões em andamento</h4>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col s12 xl4">
                     <div class="card leilao">
@@ -85,8 +136,8 @@
                             <div class="leilao_foto">
                                 <img class="responsive-img" src="images/leiloes/apresentacao.jpg">
                             </div>
-                            <a class="activator btn-floating halfway-fab waves-effect waves-light"><i
-                                    class="material-icons">add</i></a>
+                            <a class="activator btn-floating halfway-fab waves-effect waves-light">
+                                <i class="material-icons">add</i></a>
                         </div>
 
                         <div class="card-content">
@@ -125,10 +176,14 @@
                                 <h6 class="atual">Lance atual: <span class="valor">R$ 539.600</span></h6>
                             </div>
                             <div class="leilao_informacoes">
-                                <p><i class="fas fa-flag"></i><span class="campo">Código:</span><span class="valor">112</span></p>
-                                <p><i class="fas fa-map-marker-alt"></i><span class="campo">Localidade:</span><span class="valor">Rio de Janeiro, RJ</span></p>
-                                <p><i class="fas fa-calendar-alt"></i><span class="campo">Início:</span><span class="valor">27/12/2019</span></p>
-                                <p><i class="fas fa-calendar-alt"></i><span class="campo">Fim:</span><span class="valor">01/01/2020</span></p>
+                                <p><i class="fas fa-flag"></i><span class="campo">Código:</span><span
+                                        class="valor">112</span></p>
+                                <p><i class="fas fa-map-marker-alt"></i><span class="campo">Localidade:</span><span
+                                        class="valor">Rio de Janeiro, RJ</span></p>
+                                <p><i class="fas fa-calendar-alt"></i><span class="campo">Início:</span><span
+                                        class="valor">27/12/2019</span></p>
+                                <p><i class="fas fa-calendar-alt"></i><span class="campo">Fim:</span><span
+                                        class="valor">01/01/2020</span></p>
                             </div>
 
                         </div>
@@ -166,16 +221,22 @@
                                 <li class="tab"><a href="#test6">Detalhes</a></li>
                             </ul>
                         </div>
+
                         <div class="card-content grey lighten-4">
-                            <div id="test4">O leilão pode ser cancelado sem aviso prévio. Leia o edital para maiores detalhes.</div>
+                            <div id="test4">O leilão pode ser cancelado sem aviso prévio. Leia o edital para maiores
+                                detalhes.
+                            </div>
                             <div id="test5"><a href="#">Baixar o Edital (Formato em PDF)</a></div>
-                            <div id="test6"><p>
-                                O Pontal Oceânico é um novo bairro inteiramente planejado para você viver bem com lazer,
-                                segurança e conveniência. A 5 minutos das praias do Recreio e a apenas 12 minutos da
-                                Barra, o Pontal está recebendo mais de R$120 milhões em investimentos para sua
-                                infraestrutura. Além disso, o novo bairro conta com a assinatura do renomado escritório
-                                Sérgio Santana no projeto de paisagismo.
-                            </p>
+                            <div id="test6">
+                                <p>
+                                    O Pontal Oceânico é um novo bairro inteiramente planejado para você viver bem com
+                                    lazer,
+                                    segurança e conveniência. A 5 minutos das praias do Recreio e a apenas 12 minutos da
+                                    Barra, o Pontal está recebendo mais de R$120 milhões em investimentos para sua
+                                    infraestrutura. Além disso, o novo bairro conta com a assinatura do renomado
+                                    escritório
+                                    Sérgio Santana no projeto de paisagismo.
+                                </p>
 
                                 <p>
                                     A região é presenteada com tudo que a natureza tem de mais exuberante: muito verde e
@@ -196,7 +257,10 @@
                     </div>
                 </div>
             </div>
+
         </div>
+    </div>
+    <!-- Fim de .container -->
 
 </main>
 
