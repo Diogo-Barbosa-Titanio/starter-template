@@ -6,6 +6,9 @@
 const {series, src, dest} = require('gulp');
 const sass = require('gulp-sass');
 
+//Sass Bootstrap Utilities Source (Código Sass contendo só algumas partee do Utilities do Boostrap)
+const scssBootstrapUtiliies = './src/sass/bootstrap_utilities/sass/bootstrap_custom_utilities.scss';
+
 // Sass Materialize Source (Código Sass Materialize)
 const scssMaterialize = './node_modules/materialize-css/sass/materialize.scss';
 
@@ -92,7 +95,7 @@ exports.js = js;
 
 // Task 'sassdev' - Run with command 'gulp sassdev' (Comando executado com 'gulp sassdev')
 function sassdev(cb) {
-    src([scssMaterialize,scssFiles,scssMaterializeCustom])
+    src([scssMaterialize,scssFiles,scssMaterializeCustom,scssBootstrapUtiliies])
         .pipe(sass(sassDevOptions).on('error', sass.logError))
         .pipe(dest(cssDest));
     cb();
@@ -103,7 +106,7 @@ exports.sassdev = sassdev;
 
 // Task 'sassprod' - Run with command 'gulp sassprod' (Comando executado com 'gulp sassprod')
 function sassprod(cb) {
-      src([scssMaterialize,scssFiles,scssMaterializeCustom])
+      src([scssMaterialize,scssFiles,scssMaterializeCustom,scssBootstrapUtiliies])
         .pipe(sass(sassProdOptions).on('error', sass.logError))
         .pipe(dest(cssDest));
       cb();
