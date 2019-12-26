@@ -1,6 +1,7 @@
 (function ($) {
     $(function () {
 
+        M.updateTextFields();
 
         $('.tabs').tabs();
 
